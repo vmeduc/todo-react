@@ -1,0 +1,42 @@
+.todo-item {
+  position: relative;
+  list-style: none;
+  border: 1px solid var(--main-light);
+  border-radius: 8px;
+  background-color: var(--main-light);
+  padding: .5rem;
+  text-align: center;
+  /* cursor: pointer; */
+}
+
+.todo-item--checked {
+  text-decoration: line-through;
+  color: var(--main);
+}
+
+.todo-item:hover {
+  border: 1px solid var(--main);
+}
+
+.delete-button {
+  display: none;
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  height: 25px;
+  width: 25px;
+  border-radius: 35%;
+  border: none;
+  background-color: tomato;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.todo-item:hover .delete-button {
+  display: block;
+}
+
+input[type=checkbox] {
+  cursor: pointer;
+}
